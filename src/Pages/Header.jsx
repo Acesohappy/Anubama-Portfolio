@@ -1,12 +1,22 @@
-import React from 'react';
-import '../App.css';
+import React from "react";
+import "./Header.css";
+import profileImage from "../Assests/AnubamaProfile.jpg";
 
 function Header() {
     return (
-        <div className="home">
-            <h1>I'm Anubama</h1>
-            <h1>Welcome to My Portfolio</h1>
-            <img src="../Assests/AnubamaProfile.jpg" alt='logo'></img>
+        <div className="Header-section" id="Header">
+            <div className="header-content">
+                <div className="profile-container">
+                    <img src={profileImage} alt="Anubama" className="profile-pic" />
+                </div>
+                <div className="header-text">
+                    <h1 className="Header-title">Hi, I'm Anubama</h1>
+                    <h2 className="Header-subtitle">Full Stack Developer</h2>
+                    <p className="Header-description">
+                        Passionate about creating amazing web experiences with modern technologies
+                    </p>
+                </div>
+            </div>
         </div>
     )
 }

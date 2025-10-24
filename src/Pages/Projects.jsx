@@ -1,6 +1,6 @@
 import React from "react";
 import Card from "../Components/Card.jsx";
-import "../App.css";
+import "./Projects.css";
 
 function Projects() {
   const projectList = [
@@ -8,8 +8,8 @@ function Projects() {
       title: "Empower Her",
       description: "A women's safety app with real-time location sharing and emergency alerts.",
       tags: ["React", "CSS", "Firebase"],
-      github: "https://github.com/yourname/portfolio",
-      demo: "https://yourportfolio.vercel.app",
+      github: "https://github.com/Acesohappy/EmpowerHerProject",
+      demo: "https://empower-her-gamma.vercel.app/",
     },
     {
       title: "Smart Attendance System",
@@ -20,11 +20,13 @@ function Projects() {
   ];
 
   return (
-    <div className="project-grid">
-      <h1 className="Projects-title">Projects</h1>
-      {projectList.map((project, index) => (
-        <Card key={index} {...project} />
-      ))}
+    <div className="projects-section" id="Projects">
+      <h1 className="projects-title">Projects</h1>
+      <div className="project-grid">
+        {projectList.map((project, index) => (
+          <Card key={index} {...project} />
+        ))}
+      </div>
     </div>
   );
 }

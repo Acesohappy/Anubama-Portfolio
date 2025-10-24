@@ -1,0 +1,87 @@
+.Header-section {
+    background: rgba(255, 255, 255, 0.1);
+    border: 1px solid rgba(255, 255, 255, 0.2);
+    border-radius: 20px;
+    padding: 40px;
+    margin: 100px auto 40px;
+    min-height: 70vh;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    backdrop-filter: blur(10px);
+    box-shadow: 0 8px 32px rgba(0, 0, 0, 0.3);
+}
+
+.header-content {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    text-align: center;
+    max-width: 800px;
+}
+
+.profile-container {
+    margin-bottom: 30px;
+}
+
+.profile-pic {
+    width: 200px;
+    height: 200px;
+    border-radius: 50%;
+    border: 4px solid rgba(255, 255, 255, 0.3);
+    object-fit: cover;
+    transition: transform 0.3s ease;
+}
+
+.profile-pic:hover {
+    transform: scale(1.05);
+}
+
+.header-text {
+    color: white;
+}
+
+.Header-title {
+    font-size: 3rem;
+    font-weight: 700;
+    margin: 0 0 10px 0;
+    background: linear-gradient(45deg, #667eea, #764ba2);
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+    background-clip: text;
+}
+
+.Header-subtitle {
+    font-size: 1.5rem;
+    font-weight: 400;
+    margin: 0 0 20px 0;
+    color: #e0e0e0;
+}
+
+.Header-description {
+    font-size: 1.1rem;
+    color: #b0b0b0;
+    line-height: 1.6;
+    margin: 0;
+    max-width: 600px;
+}
+
+@media (max-width: 768px) {
+    .Header-section {
+        padding: 30px 20px;
+        margin: 80px auto 30px;
+    }
+    
+    .Header-title {
+        font-size: 2.5rem;
+    }
+    
+    .Header-subtitle {
+        font-size: 1.3rem;
+    }
+    
+    .profile-pic {
+        width: 150px;
+        height: 150px;
+    }
+}
